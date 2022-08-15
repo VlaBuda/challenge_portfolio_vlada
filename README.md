@@ -7,9 +7,37 @@ And now I'm interested in improving my knowledge, bringing it to a new level.
 My expectations are new information that I will be able to use, as well as try myself in an internship (if I am chosen).
 
 # Task 2: Selectors
-## Subtask 1: Searching for selectors on the login pageList all the elements that are on the login page.
-Selectors what I found for Login
+## Subtask 1: Searching for selectors on the login page. List all the elements that are on the login page.
 
-1.//input[@id="login"]
-2.//*[@name="login"]
+Selectors for Scouts Panel
+1.//child::div/h5
+2.//h5
+
+Selectors for Login
+1.//input[@id="login"] 
+2.//*[@name="login"] 
 3.//child::div/input
+ 
+Selectors for password
+1.[name=password]
+2.//*[@name="password"] 
+3.//input[@id="password"] 
+ 
+Selectors for remind password
+1.//*[text()="Remind password"]
+2.//a
+3.//child::div/a
+
+Selectors for language dropdown (English)
+1.//input[@value="en"]
+2.[value=en]
+3.//input[@class="MuiSelect-nativeInput"]
+ 
+Selectors for language dropdown (Polish)
+1.[value=pl]
+2.//input[@value="pl"]
+3.//input[@class="MuiSelect-nativeInput"]
+ 
+Selectors for button
+1.//*[@type="submit"]
+2.//child::div/button
