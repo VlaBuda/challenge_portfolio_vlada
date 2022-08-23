@@ -21,7 +21,9 @@ class Test(unittest.TestCase):
     def test_print_nice_words(self):
         print("WELL DONE!!!!!!!!!")
 
+
 class TestMediumPage(unittest.TestCase):
+
 
     @classmethod
     def setUp(self):
@@ -36,11 +38,13 @@ class TestMediumPage(unittest.TestCase):
         actual_title = self.get_page_title("https://medium.com/")
         expected_title = "Medium – Where good ideas find you."
         assert actual_title == expected_title
+
+
     def get_page_title(self, url):
-        self.driver.title(url)
+        self.driver.get(url)
         return self.driver.title
+
     @classmethod
     def tearDown(self):
-    self.driver.quit()
-
+        self.driver.quit()
 
